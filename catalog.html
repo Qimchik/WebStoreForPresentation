@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <title>Template</title>
+	<link media="screen and (min-width: 1024px)" href="css/desktop.css" rel="stylesheet" />
+	<link media="(max-width: 1023px) and (min-width: 481px)" href="css/tablet.css" rel="stylesheet" />
+	<link media="(max-width: 480px)" href="css/mobile.css" rel="stylesheet" />
+</head> 
+<body>
+<div class="content wrapper">
+	<header>
+		<a href="index.html">
+			<h1>Template</h1>
+		</a>
+		<div class="headerRightDiv">
+			<span class="signUpDiv">
+			<a onclick="alert('You clicked on sign up')"><span class="singUp">E-mail sing up</span></a>
+			</span>
+			<a href="shopping_bag.html">
+				<span id="bag" class="bag">Bag</span>
+				<div class="bagIco"></div>
+			</a>
+		</div>
+		<div class="menuButton" onclick="mobile.showMobileMenu(true)">
+			<div class="menuIco"></div>
+		</div>
+		<div class="menuButtonClose" onclick="mobile.showMobileMenu(false)">
+			<div class="menuCloseIco"></div>
+		</div>
+		<nav>	
+		<div class="hiddenHeaderNavigation">
+			<ul style="left:0px" class="headerNavigation">
+				<li><a id="women" href="catalog.html?group=women">Women</a></li>
+				<li><a id="men" href="catalog.html?group=men">Men</a></li>
+				<li><a id="handbags" href="catalog.html?group=handbags">Handbags</a></li>
+				<li><a id="accessories" href="catalog.html?group=accessories">Accessories</a></li>
+				<li><a id="sale" href="catalog.html?group=sale">Sale</a></li>
+				<li><a id="newarrivals" href="catalog.html?group=newarrivals">New Arrivals</a></li>
+				<li><a id="clearance" href="catalog.html?group=clearance">Clearance</a></li>
+				<li><a id="storelocator" href="catalog.html?group=storelocator">Store Locator</a></li>
+			</ul>
+		</div>
+
+		<div class="searchDiv">
+			<div class="searchDivTablet">
+				<input id="search" type="text" placeholder="Style Name"/>
+				<div onclick="searchheader()" class="searchIco"></div>
+			</div>
+		</div>
+		</nav>
+	</header>
+</div>
+<div class="lineMobile"></div>
+<div class="lineDesktop"></div>
+
+<!--END HEADER--><!--END HEADER--><!--END HEADER-->
+
+<!--FILTERS-->
+<!--FILTERS_ MOBILE-->
+<div id="filtersMobile" onclick="filtersCatalog.showMenu(this)" class="filtersMobile hoverBackground">
+	<ul id="listFiltersMobile">
+		<li id="fashionMobile">Fashion</li>, 
+		<li id="producttypeMobile">Product type</li>, 
+		<li id="colorMobile">Color</li>, 
+		<li id="brandMobile">Brand</li>, 
+		<li id="sizeMobile">Size</li>, 
+		<li id="pricerangeMobile">Price range</li>
+	</ul>
+	<div class="filtersListIco"></div>
+	<div class="menuCloseIco" onclick="filtersCatalog.showMenu(this)"></div>
+</div>
+
+
+<!--FILTERS_ MOBILE END--><!--FILTERS_ MOBILE END-->
+<!--FILTERS_ MOBILE END--><!--FILTERS_ MOBILE END-->
+<div class="lineMobile"></div>
+<div id="filters" class="filters">
+		<div class="filter"> 
+			<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filterFirst hoverBackground hoverBackground noSelected"> 
+				<span>Fashion</span>
+				<span id="fashion">Fashion</span>
+				<div class="filtersListIco"></div>
+				<div class="dropDown">
+					<ul>
+						<li>Not selected</li>
+						<li>Casual style</li>
+						<li>New Look</li>
+						<li>Sport</li>
+						<li>Vintage</li>
+						<li>Class</li>
+						<li>Business style</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filter hoverBackground noSelected"> 
+			<span>Product type</span>
+			<span id="producttype"></span>
+			<div class="filtersListIco"></div>
+			<div class="dropDown">
+				<ul>
+					<li>Not selected</li>
+					<li>Coats</li>
+					<li>Jackets</li>
+					<li>Dresses</li>
+					<li>Jerse</li>
+					<li>Skirts</li>
+					<li>Jeans</li>
+					<li>Jumpers</li>
+				</ul>
+			</div>
+		</div>
+		<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filter hoverBackground noSelected"> 
+			<span>Color</span>
+			<span id="color"></span>
+			<div class="filtersListIco"></div>
+			<div class="dropDown">
+				<ul>
+					<li>Not selected</li>
+					<li>Black</li>
+					<li>Blue</li>
+					<li>Red</li>
+					<li>Green</li>
+					<li>Gold</li>
+					<li>Yellow</li>
+					<li>Silver</li>
+					<li>Pink</li>
+				</ul>
+			</div>
+		</div>
+		<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filter hoverBackground noSelected">
+			<span>Brand</span>
+			<span id="brand">Antipodium</span>
+			<div class="filtersListIco"></div>
+			<div class="dropDown">
+				<ul>
+					<li>Not selected</li>
+					<li>Antipodium</li>
+					<li>Adidas</li>
+					<li>New Balance</li>
+					<li>River Island</li>
+					<li>Nike</li>
+				</ul>
+			</div>
+		</div>
+		<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filter hoverBackground noSelected">
+			<span>Size</span>
+			<span id="size">UK 18</span>
+			<div class="filtersListIco"></div>
+			<div class="dropDown">
+				<ul>
+					<li>Not selected</li>
+					<li>UK 18</li>
+					<li>UK 18L</li>
+					<li>UK 20</li>
+					<li>UK 20L</li>
+					<li>UK 20S</li>
+					<li>UK 22</li>
+					<li>UK 22L</li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter"> 
+			<div onmouseenter="dropDown.showMenu(this,true)" onmouseleave="dropDown.showMenu(this,false)" class="filterLast hoverBackground noSelected"> 
+				<span>Price range</span>
+				<span id="pricerange"></span>
+				<div class="filtersListIco"></div>
+				<div class="dropDown">
+					<ul>
+						<li>Not selected</li>
+						<li>TO £99</li>
+						<li>£100-£199</li>
+						<li>£200-£299</li>
+						<li>£300-£399</li>
+						<li>From £400</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+<div id="menuForChooseFilters" class="menuForChooseFilters">
+	<ul>
+		<li>
+			<h3>Fashion</h3>
+			<div filter="fashion" style="left:-1175px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>Casual style</li>, <li>New Look</li>, <li>Sport</li>, <li>Vintage</li>, <li>Class</li>, <li>Business style</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>Casual style</li>, <li>New Look</li>, <li>Sport</li>, <li>Vintage</li>, <li>Class</li>, <li>Business style</li></ul>,</span>
+			</div>
+		</li>
+		<li>
+			<h3>Product type</h3>
+			<div filter="producttype" style="left:-1080px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>Coats</li>, <li>Jackets</li>, <li>Dresses</li>, <li>Jerse</li>, <li>Skirts</li>, <li>Jeans</li>, <li>Jumpers</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>Coats</li>, <li>Jackets</li>, <li>Dresses</li>, <li>Jerse</li>, <li>Skirts</li>, <li>Jeans</li>, <li>Jumpers</li></ul>,</span>
+			</div>
+		</li>
+		<li>
+			<h3>Color</h3>
+			<div filter="color" style="left:-995px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>Black</li>, <li>Blue</li>, <li>Red</li>, <li>Green</li>, <li>Gold</li>, <li>Yellow</li>, <li>Silver</li>, <li>Pink</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>Black</li>, <li>Blue</li>, <li>Red</li>, <li>Green</li>, <li>Gold</li>, <li>Yellow</li>, <li>Silver</li>, <li>Pink</li></ul>,</span>
+			</div>
+		</li>
+		<li>
+			<h3>Brand</h3>
+			<div filter="brand" style="left:-1040px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>Antipodium</li>, <li>Adidas</li>, <li>New Balance</li>, <li>River Island</li>, <li>Nike</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>Antipodium</li>, <li>Adidas</li>, <li>New Balance</li>, <li>River Island</li>, <li>Nike</li></ul>,</span>
+			</div>
+		</li>
+		<li>
+			<h3>Size</h3>
+			<div filter="size" style="left:-1055px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>UK 18</li>, <li>UK 18L</li>, <li>UK 20</li>, <li>UK 20L</li>, <li>UK 20S</li>, <li>UK 22</li>, <li>UK 22L</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>UK 18</li>, <li>UK 18L</li>, <li>UK 20</li>, <li>UK 20L</li>, <li>UK 20S</li>, <li>UK 22</li>, <li>UK 22L</li></ul>,</span>
+			</div>
+		</li>
+		<li>
+			<h3>Price range</h3>
+			<div filter="pricerange" style="left:-1085px" class="filtersForChoose">
+			<span class="filters1"><ul><li style="color:black">Not selected</li>, <li>TO £99</li>, <li>£100-£199</li>, <li>£200-£299</li>, <li>£300-£399</li>, <li>From £400</li></ul>,</span>
+			<span class="filters2"><ul><li style="color:black">Not selected</li>, <li>TO £99</li>, <li>£100-£199</li>, <li>£200-£299</li>, <li>£300-£399</li>, <li>From £400</li></ul>,</span>
+
+			</div>
+		</li>
+	</ul>
+	
+</div>
+
+<!--FILTERS_END-->
+
+<div class="lineDesktop"></div>
+
+<div class="wrapper contentMain">
+	<main class="filteredArrivals">
+	<div id="upSelling" class="upSelling">
+		<h4>Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</h4>
+		<span class="discount">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</span>
+	</div>
+	<ul class="arrivals">
+	</ul>
+
+	<input type="button" onclick="filteredProduct.showMore(filtersSelected)" id="buttonShowMore" class="buttonShowMore hoverBackground" value="Show more"/>
+	</main>
+</div>
+
+<div class="banners">
+	 <a href="item.html?id=5"><img class="banner4" src="img/banners/banner4.png" alt="banner"></a><a href="item.html?id=2"><img class="banner5" src="img/banners/banner5.png" alt="banner"></a><a href="item.html?id=8"><img class="banner6" src="img/banners/banner3.png" alt="banner"></a>
+</div>
+
+
+<!--BEGIN FOOTER--><!--BEGIN FOOTER--><!--BEGIN FOOTER-->
+
+<div class='lineDesktop'></div>
+<footer class="footerWrapper">
+	<div class="lineMobile"></div>
+	<nav class="footerLeftNavigation">
+		<div class="quickLinks">
+			<h5>Quick Links</h5>
+			<ul>
+					<li><a onclick="alert('You clicked on Store locator')">Store locator</a></li>
+					<li><a onclick="alert('You clicked on Gift cards')">Gift cards</a></li>
+					<li><a onclick="alert('You clicked on Size guide')">Size guide</a></li>
+					<li><a onclick="alert('You clicked on About us')">About us</a></li>
+					<li><a onclick="alert('You clicked on Support')">Support</a></li>
+				</ul>
+		</div>
+		<div class="customerCare">
+			<h5>Customer Care</h5>
+				<ul>
+					<li><a onclick="alert('You clicked on Customer service')">Customer service</a></li>
+					<li><a onclick="alert('You clicked on Track my order')">Track my order</a></li>
+					<li><a onclick="alert('You clicked on Return policy')">Return policy</a></li>
+					<li><a onclick="alert('You clicked on Shipping & delivery')">Shipping & delivery</a></li>
+					<li><a onclick="alert('You clicked on Contact us')">Contact us</a></li>
+					<li><a onclick="alert('You clicked on Careers')">Careers</a></li>
+				</ul>
+		</div>
+	</nav>
+	<div class="lineMobile"></div>
+	<div class="footerFeedBackInformation">
+		<div class="questions">
+			<h5>Questions</h5>
+			<a onclick="alert('You clicked on Tweet')">
+			<div class="twitter">
+			<div class="twitterIco"></div>
+			Tweet us <span>@template</span>
+			</div>
+			</a>
+		</div>
+		<div class="order">
+			<h5>Order by phone</h5>
+				<div class="phoneNumber">8-800-409-47-12</div>
+		</div>
+	<div class="footerDeliveryInformation">
+		We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+	</div>
+	<div class="lineMobile"></div>
+	</div>	
+	<div class="socialNetworksIcons">
+		<a onclick="alert('You clicked on facebookIco')"><div class="facebookIco"></div></a>
+		<a onclick="alert('You clicked on twitterIco')"><div class="twitterBlueIco"></div></a>
+	</div>	
+	<div class='lineDesktop'></div>
+	<div class="footerFinalyNavigation">
+		<ul>
+			<li><a onclick="alert('You clicked on Legal notice')">Legal notice</a></li>
+			<li><a onclick="alert('You clicked on Privacy policy')">Privacy policy</a></li>
+			<li><a onclick="alert('You clicked on Site map')">Site map</a></li>
+		</ul>
+	</div>
+	<div class="lineMobile"></div>
+	<div class="creater">© 2010–2015, The Template Group inc.</div>
+	<div class="share"><span>Share </span>
+		<div class="shareQuantity"> 1 437</div>
+	</div>
+</footer>
+<script src="js/data.js"> </script>
+<script src="js/header.js"> </script>
+<script src="js/mobileMenu.js"> </script>
+<script src="js/catalog.js"> </script>
+</body>
+</html>

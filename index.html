@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <title>Template</title>
+	<link media="screen and (min-width: 1024px)" href="css/desktop.css" rel="stylesheet" />
+	<link media="(max-width: 1023px) and (min-width: 481px)" href="css/tablet.css" rel="stylesheet" />
+	<link media="(max-width: 480px)" href="css/mobile.css" rel="stylesheet" />
+</head> 
+<body>
+<div class="content wrapper">
+	<header>
+		<a href="index.html">
+			<h1>Template</h1>
+		</a>
+		<div class="headerRightDiv">
+			<span class="signUpDiv">
+			<a onclick="alert('You clicked on sign up')"><span class="singUp">E-mail sing up</span></a>
+			</span>
+			<a href="shopping_bag.html">
+				<span id="bag" class="bag">Bag</span>
+				<div class="bagIco"></div>
+			</a>
+		</div>
+		<div class="menuButton" onclick="mobile.showMobileMenu(true)">
+			<div class="menuIco"></div>
+		</div>
+		<div class="menuButtonClose" onclick="mobile.showMobileMenu(false)">
+			<div class="menuCloseIco"></div>
+		</div>
+		<nav>	
+		<div class="hiddenHeaderNavigation">
+			<ul style="left:0px" class="headerNavigation">
+				<li><a id="women" href="catalog.html?group=women">Women</a></li>
+				<li><a id="men" href="catalog.html?group=men">Men</a></li>
+				<li><a id="handbags" href="catalog.html?group=handbags">Handbags</a></li>
+				<li><a id="accessories" href="catalog.html?group=accessories">Accessories</a></li>
+				<li><a id="sale" href="catalog.html?group=sale">Sale</a></li>
+				<li><a id="newarrivals" href="catalog.html?group=newarrivals">New Arrivals</a></li>
+				<li><a id="clearance" href="catalog.html?group=clearance">Clearance</a></li>
+				<li><a id="storelocator" href="catalog.html?group=storelocator">Store Locator</a></li>
+			</ul>
+		</div>
+
+		<div class="searchDiv">
+			<div class="searchDivTablet">
+				<input id="search" type="text" placeholder="Style Name"/>
+				<div onclick="searchheader()" class="searchIco"></div>
+			</div>
+		</div>
+		</nav>
+	</header>
+</div>
+<div class="lineMobile"></div>
+
+<!--END HEADER--><!--END HEADER--><!--END HEADER-->
+
+<div class="carousel">
+	<ul id="slides" class="slides">	
+		<li class="slide4"></li>
+		<li url="catalog.html?group=sale" class="slide1"></li>
+		<li url="catalog.html?search=dress" class="slide2"></li>
+		<li url="item.html?id=4" class="slide3"></li>
+		<li url="item.html?id=8" class="slide4"></li>
+		<li class="slide1"></li>
+	</ul>
+	<div class="carouselButtonsDiv">
+		<a href="#" onclick="slider.getPage(1,true);return false;">
+		<div class="carouselButton chooseSlide"></div>
+		</a>
+		<a href="#" onclick="slider.getPage(2,true);return false;">
+		<div class="carouselButton"></div>
+		</a>
+		<a class="butt3" href="#" onclick="slider.getPage(3,true);return false;">
+		<div class="carouselButton"></div>
+		</a>
+		<a href="#" onclick="slider.getPage(4,true);return false;">
+		<div class="carouselButton"></div>
+		</a>
+	</div>
+</div>
+<div class="banners">
+	<a href="catalog.html?group=handbags"><img class="banner1" src="img/banners/banner1.png" alt="banner"></a><a href="catalog.html?search=dress"><img class="banner2" src="img/banners/banner2.png" alt="banner"></a><a href="item.html?id=8"><img class="banner3" src="img/banners/banner3.png" alt="banner"></a>
+</div>
+
+<div class="wrapper contentMain">
+	<main class="newArrivals">
+	<h2>New arrivals</h2>
+	<div class="oneLineOnly">
+		<ul class="arrivals">
+		</ul>
+	</div>
+
+	<input type="button" onclick="window.location.href='catalog.html'" class="buttonShowAllArrivals hoverBackground" value="All arrivals"/>	
+	</main>
+</div>
+
+
+<!--BEGIN FOOTER--><!--BEGIN FOOTER--><!--BEGIN FOOTER-->
+
+<div class='lineDesktop'></div>
+<footer class="footerWrapper">
+	<div class="lineMobile"></div>
+	<nav class="footerLeftNavigation">
+		<div class="quickLinks">
+			<h5>Quick Links</h5>
+			<ul>
+					<li><a onclick="alert('You clicked on Store locator')">Store locator</a></li>
+					<li><a onclick="alert('You clicked on Gift cards')">Gift cards</a></li>
+					<li><a onclick="alert('You clicked on Size guide')">Size guide</a></li>
+					<li><a onclick="alert('You clicked on About us')">About us</a></li>
+					<li><a onclick="alert('You clicked on Support')">Support</a></li>
+				</ul>
+		</div>
+		<div class="customerCare">
+			<h5>Customer Care</h5>
+				<ul>
+					<li><a onclick="alert('You clicked on Customer service')">Customer service</a></li>
+					<li><a onclick="alert('You clicked on Track my order')">Track my order</a></li>
+					<li><a onclick="alert('You clicked on Return policy')">Return policy</a></li>
+					<li><a onclick="alert('You clicked on Shipping & delivery')">Shipping & delivery</a></li>
+					<li><a onclick="alert('You clicked on Contact us')">Contact us</a></li>
+					<li><a onclick="alert('You clicked on Careers')">Careers</a></li>
+				</ul>
+		</div>
+	</nav>
+	<div class="lineMobile"></div>
+	<div class="footerFeedBackInformation">
+		<div class="questions">
+			<h5>Questions</h5>
+			<a onclick="alert('You clicked on Tweet')">
+			<div class="twitter">
+			<div class="twitterIco"></div>
+			Tweet us <span>@template</span>
+			</div>
+			</a>
+		</div>
+		<div class="order">
+			<h5>Order by phone</h5>
+				<div class="phoneNumber">8-800-409-47-12</div>
+		</div>
+	<div class="footerDeliveryInformation">
+		We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+	</div>
+	<div class="lineMobile"></div>
+	</div>	
+	<div class="socialNetworksIcons">
+		<a onclick="alert('You clicked on facebookIco')"><div class="facebookIco"></div></a>
+		<a onclick="alert('You clicked on twitterIco')"><div class="twitterBlueIco"></div></a>
+	</div>	
+	<div class='lineDesktop'></div>
+	<div class="footerFinalyNavigation">
+		<ul>
+			<li><a onclick="alert('You clicked on Legal notice')">Legal notice</a></li>
+			<li><a onclick="alert('You clicked on Privacy policy')">Privacy policy</a></li>
+			<li><a onclick="alert('You clicked on Site map')">Site map</a></li>
+		</ul>
+	</div>
+	<div class="lineMobile"></div>
+	<div class="creater">© 2010–2015, The Template Group inc.</div>
+	<div class="share"><span>Share </span>
+		<div class="shareQuantity"> 1 437</div>
+	</div>
+</footer>
+<script src="js/data.js"> </script>
+<script src="js/header.js"> </script>
+<script src="js/mobileMenu.js"> </script>
+<script src="js/carousel.js"> </script>
+<script src="js/homepage.js"> </script>
+</body>
+</html>
